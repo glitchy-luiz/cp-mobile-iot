@@ -6,11 +6,11 @@ Painel mobile (React Native + Expo + TypeScript) que se comunica com um disposit
 
 | Nome completo | RM |
 |---|---|
-| _PREENCHER — Nome completo do integrante 1_ | _RM_ |
-| _PREENCHER — Nome completo do integrante 2_ | _RM_ |
-| _PREENCHER — Nome completo do integrante 3_ | _RM_ |
-
-> ⚠️ Preencha **nome completo e RM de todos** antes de entregar. Sem isso, a nota é zero.
+| Bruno Otávio | 556196 |
+| Guilherme Flores | 554948 |
+| Leonardo Novaes | 554807 |
+| Luiz Souza | 555561 |
+| Marcello Moreira | 557531 |
 
 ## Tecnologias e versões
 
@@ -24,8 +24,6 @@ Painel mobile (React Native + Expo + TypeScript) que se comunica com um disposit
 | paho-mqtt (cliente MQTT sobre WebSocket) | 1.1 |
 | @react-native-async-storage/async-storage | 2.2 |
 | Simulador: Node.js + mqtt.js | Node 18+ / mqtt 5 |
-
-(Confira os valores finais no seu `package.json`.)
 
 ## Instalação e execução
 
@@ -48,14 +46,14 @@ A URL pode ser alterada na tela **Configurações** e fica salva no AsyncStorage
 
 ## Tópicos MQTT
 
-Prefixo exclusivo do grupo: `fiap/turma/grupo01` (**troque** em `src/config/topics.ts` e use o mesmo no simulador via `TOPIC_PREFIX`).
+Prefixo exclusivo do grupo: `fiap/2ESPV/grupoBGLLM` (Iniciais dos integrantes)
 
 | Tópico | Direção no app | Payload |
 |---|---|---|
-| `fiap/turma/grupo01/sensor/temperatura` | Subscribe (recebe) | `{"value":24.5}` |
-| `fiap/turma/grupo01/sensor/umidade` | Subscribe (recebe) | `{"value":58}` |
-| `fiap/turma/grupo01/lampada/comando` | Publish (envia) | `{"action":"ON"}` ou `{"action":"OFF"}` |
-| `fiap/turma/grupo01/lampada/estado` | Subscribe (recebe) | `{"state":"ON"}` ou `{"state":"OFF"}` |
+| `fiap/2ESPV/grupoBGLLM/sensor/temperatura` | Subscribe (recebe) | `{"value":24.5}` |
+| `fiap/2ESPV/grupoBGLLM/sensor/umidade` | Subscribe (recebe) | `{"value":58}` |
+| `fiap/2ESPV/grupoBGLLM/lampada/comando` | Publish (envia) | `{"action":"ON"}` ou `{"action":"OFF"}` |
+| `fiap/2ESPV/grupoBGLLM/lampada/estado` | Subscribe (recebe) | `{"state":"ON"}` ou `{"state":"OFF"}` |
 
 ## Simulador do dispositivo
 
@@ -109,7 +107,12 @@ src/
 
 ## Prints das telas
 
-_Adicione aqui prints de Dashboard, Histórico e Configurações (Light e Dark) em `docs/` e referencie, por exemplo: `![Dashboard](docs/dashboard.png)`._
+<img width="1919" height="942" alt="image" src="https://github.com/user-attachments/assets/cdf48468-b00c-4ae5-89bb-a376026a3e5e" />
+<img width="1919" height="940" alt="image" src="https://github.com/user-attachments/assets/6f1e5ae4-82bf-4808-ad3a-751bf89bbcd1" />
+<img width="1919" height="937" alt="image" src="https://github.com/user-attachments/assets/352ecb1a-70e6-4849-b61f-64e33412fc16" />
+
+
+
 
 ## Limitações e observações
 
